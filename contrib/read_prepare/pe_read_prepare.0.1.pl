@@ -15,7 +15,7 @@ if ($#ARGV < 0){
 	how_to_use();
 }
 
-my ($s, $s_r1, $s_r2, $l, $l_r1, $l_r2, $Q, $q, $p, $n);
+my ($s, $s_r1, $s_r2, $l, $l_r1, $l_r2, $e, $q, $p, $n);
 
 GetOptions ('s=i'	=> \$s,
 	    's_r1=i'	=> \$s_r1,
