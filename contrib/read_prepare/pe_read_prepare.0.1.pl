@@ -63,7 +63,7 @@ elsif(defined $l_r1 && defined $l_r2){
 #--------------------------------------------[OPENING INPUT FASTQ FILES]------------------------------------------
 
 $T0=localtime();
-print "$T0\tPaired-End Read Preprocessing Has Begum\n";
+print "$T0\tPaired-End Read Preprocessing Has Begun\n";
 
 $gzip_R1 = grep(/\.gz/, $ARGV[0]);
 $gzip_R2 = grep(/\.gz/, $ARGV[1]);
@@ -260,12 +260,12 @@ perl pe_read_prepare.0.1.pl [Options] <READ1> <READ2> <Output_Prefix>
 Optional Parameters:
 
 -s      <integer>       <read pair trim start position>		default (1)
--s_r1   <integer>       <read 1 trim start position>		default (1)
--s_r2   <integer>       <read 2 trim start position>		default (1)
+-s_r1   <integer>       <read 1 start position>			default (1)
+-s_r2   <integer>       <read 2 start position>			default (1)
 
--l      <integer>       <read pair trim length>			default (no trimming)
--l_r1   <integer>       <read 1 trim length>         		default (no trimming)
--l_r2   <integer>       <read 2 trim length>			default (no trimming)
+-l      <integer>       <read pair length>			default (no trimming)
+-l_r1   <integer>       <read 1 length>         		default (no trimming)
+-l_r2   <integer>       <read 2 length>				default (no trimming)
 
 -e	<33 / 64>	<quality encoding>			default (33)
 -q      <integer>       <minimum base quality score>		default (20)
