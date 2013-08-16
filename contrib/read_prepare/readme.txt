@@ -1,4 +1,3 @@
-
 ------------------------------------------------------------------------------------------
 
 PE_READ_PREPARE.pl: Preprocessing of paired-end data for de novo genome assembly
@@ -44,13 +43,13 @@ perl pe_read_prepare.0.01.pl [Options] <READ1> <READ2> <Output_Prefix>
 
 Optional Parameters:
 
--s      <integer>       <read pair trim start position>         default (1)
--s_r1   <integer>       <read 1 trim start position>            default (1)
--s_r2   <integer>       <read 2 trim start position>            default (1)
+-s      <integer>       <read pair start position>         	default (1)
+-s_r1   <integer>       <read 1 start position>         	default (1)
+-s_r2   <integer>       <read 2 start position>         	default (1)
 
--l      <integer>       <read pair trim length>                 default (no trimming)
--l_r1   <integer>       <read 1 trim length>                    default (no trimming)
--l_r2   <integer>       <read 2 trim length>                    default (no trimming)
+-l      <integer>       <read pair length	            	default (no trimming)
+-l_r1   <integer>       <read 1 length> 	        	default (no trimming)
+-l_r2   <integer>       <read 2 length>         	        default (no trimming)
 
 -e      <33 / 64>       <quality encoding>                      default (33)
 -q      <integer>       <minimum base quality score>            default (20)
