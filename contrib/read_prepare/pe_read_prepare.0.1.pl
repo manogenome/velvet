@@ -259,7 +259,7 @@ perl pe_read_prepare.0.1.pl [Options] <READ1> <READ2> <Output_Prefix>
 
 Optional Parameters:
 
--s      <integer>       <read pair trim start position>		default (1)
+-s      <integer>       <read pair start position>		default (1)
 -s_r1   <integer>       <read 1 start position>			default (1)
 -s_r2   <integer>       <read 2 start position>			default (1)
 
