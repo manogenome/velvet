@@ -72,7 +72,7 @@ static Mask * newMask(SequencesWriter *seqWriteInfo, Coordinate position)
 // note that createBinary is only used by velveth
 //
 boolean createBinary = false;
-inline boolean isCreateBinary()
+boolean isCreateBinary()
 {
 	return createBinary;
 }
@@ -1579,7 +1579,7 @@ ReadSet *importReadSet(char *filename)
 		} else {
 			bpCount += (Coordinate) strlen(line) - 1;
 
-			if (sizeof(ShortLength) == sizeof(int16_t) && bpCount > SHRT_MAX) {
+			if (sizeof(ShortLength) == sizeof(int16_t) && (bpCount > SHRT_MAX || bpCount < 0)) {
 				velvetLog("Read %li of length %lli, longer than limit %i\n",
 				       (long) sequenceIndex + 1, (long long) bpCount, SHRT_MAX);
 				velvetLog("You should modify recompile with the LONGSEQUENCES option (cf. manual)\n");
